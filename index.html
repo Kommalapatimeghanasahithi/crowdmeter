@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<link rel="stylesheet" href="css/style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Campus Crowd Meter - Track real-time occupancy in libraries, canteens and study halls.">
+    <title>CrowdMeter | Real-time Campus Crowd Tracking</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">CrowdMeter</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#how">How It Works</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#benefits">Benefits</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Know Where It’s Crowded, Before You Go</h1>
+        <p>A smart, campus-wide real-time crowd tracking concept for smarter student life.</p>
+        <a href="#dashboard" class="btn">View Live Dashboard</a>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how" class="how-section">
+        <h2>How It Works</h2>
+        <div class="how-cards">
+            <div class="how-card">
+                <i class='bx bx-id-card'></i>
+                <h3>ID Scan at Entry</h3>
+                <p>Students scan their campus ID cards at entrance points.</p>
+            </div>
+            <div class="how-card">
+                <i class='bx bx-cloud-upload'></i>
+                <h3>Live Data Sync</h3>
+                <p>Data is pushed instantly to the cloud-based CrowdMeter system.</p>
+            </div>
+            <div class="how-card">
+                <i class='bx bx-bar-chart'></i>
+                <h3>Real-time Dashboard</h3>
+                <p>Students check the live crowd data via this web dashboard.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Crowd Dashboard Section -->
+    <section id="dashboard" class="dashboard">
+        <h2>Live Campus Crowd Dashboard</h2>
+        <div class="crowd-cards">
+            <div class="crowd-card">
+                <h3>📚 Library</h3>
+                <p class="crowd-count" id="libraryCount">0</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="libraryBar"></div>
+                </div>
+            </div>
+            <div class="crowd-card">
+                <h3>📖 Reading Hall</h3>
+                <p class="crowd-count" id="readingCount">0</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="readingBar"></div>
+                </div>
+            </div>
+            <div class="crowd-card">
+                <h3>💾 Digital Library</h3>
+                <p class="crowd-count" id="digitalCount">0</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="digitalBar"></div>
+                </div>
+            </div>
+            <div class="crowd-card">
+                <h3>☕ Java Cafe</h3>
+                <p class="crowd-count" id="javaCount">0</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="javaBar"></div>
+                </div>
+            </div>
+            <div class="crowd-card">
+                <h3>🍽️ Main Canteen</h3>
+                <p class="crowd-count" id="canteenCount">0</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="canteenBar"></div>
+                </div>
+            </div>
+            <div class="crowd-card">
+                <h3>🍕 Food Joint</h3>
+                <p class="crowd-count" id="foodCount">0</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="foodBar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <h2>Why It Matters</h2>
+        <div class="benefit-cards">
+            <div class="benefit-card">
+                <i class='bx bx-run'></i>
+                <h3>Avoid Crowds</h3>
+                <p>Plan your visits based on live space availability data.</p>
+            </div>
+            <div class="benefit-card">
+                <i class='bx bx-shield'></i>
+                <h3>Stay Safer</h3>
+                <p>Prevent overcrowding and help manage public health risks.</p>
+            </div>
+            <div class="benefit-card">
+                <i class='bx bx-timer'></i>
+                <h3>Save Time</h3>
+                <p>Skip long queues and busy hours. Stay efficient, always.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <h2>FAQ</h2>
+        <details>
+            <summary>Is this system live on campus?</summary>
+            <p>This is a concept web prototype. Actual integration requires campus infrastructure and sensor systems.
+            </p>
+        </details>
+        <details>
+            <summary>How would real-time data be updated?</summary>
+            <p>Through IoT devices or student ID scanners connected to the cloud, feeding real-time occupancy data to
+                this dashboard.</p>
+        </details>
+        <details>
+            <summary>Can it send alerts when areas are full?</summary>
+            <p>Yes. Future versions could include SMS or email notifications based on live occupancy thresholds.</p>
+        </details>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>For demo requests, feedback, or project collaborations — reach out:</p>
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/meghanasahithikommalapati/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
+    <a href="mailto:kommalapatimeghanasahithi@gmail.com"><i class='bx bx-envelope'></i></a>
+  </div>
+  <p style="margin-top: 1rem; font-weight:600;">Created by: Meghana Sahithi Kommalapati</p>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Maggie. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
